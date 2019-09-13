@@ -1,0 +1,7 @@
+<angular-cropper #angularCropper [cropperOptions]="cropperOptions" [imageUrl]="imageUrl"></angular-cropper>
+<button (click)="zoomIn()">Zoom In</button>
+<button (click)="zoomOut()">Zoom Out</button>
+<button (click)="setDragMode('move')">Drag mode move</button>
+<button (click)="setDragMode('crop')">Drag mode crop</button>
+<button (click)="crop()">crop</button>
+<button (click)="clear()">clear</button>
