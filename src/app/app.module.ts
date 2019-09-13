@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularCropperjsModule } from 'angular-cropperjs';
+import { NgxCropperjsModule } from 'ngx-cropperjs'
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { AngularCropperjsModule } from 'angular-cropperjs';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularCropperjsModule
+    AngularCropperjsModule,
+    NgxCropperjsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

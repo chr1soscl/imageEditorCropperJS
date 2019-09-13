@@ -1,5 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { CropperComponent } from 'angular-cropperjs';
+import { NgxCropperjsComponent } from 'ngx-cropperjs';
+
 
 @Component({
   selector: 'app-root',
@@ -11,6 +13,7 @@ export class AppComponent {
   imageUrl='https://static.pexels.com/photos/248797/pexels-photo-248797.jpeg';
   title = 'imageEditorCropperJS';
   @ViewChild('angularCropper') public angularCropper: CropperComponent;
+  @ViewChild('ngxCropper') public ngxCropper: NgxCropperjsComponent;
 
   cropperOptions = {
     center: true,
@@ -46,4 +49,25 @@ export class AppComponent {
   clear(){
     this.angularCropper.cropper.clear();
   }
+
+  ngxZoomIn(){
+    this.ngxCropper.cropper.zoom(0.1);
+  }
+
+  ngxZoomOut(){
+    this.ngxCropper.cropper.zoom(-0.1);
+  }
+
+  ngxSetDragMode(mode){
+    this.ngxCropper.cropper.setDragMode(mode);
+  }
+
+  ngxCrop(){
+    this.ngxCropper.cropper.crop();
+  }
+
+  ngxClear(){
+    this.ngxCropper.cropper.clear();
+  }
+
 }
