@@ -8,7 +8,7 @@ import { CropperComponent } from 'angular-cropperjs';
 })
 export class AppComponent {
 
-  imageUrl='https://i.redd.it/pei6h9caxoa21.jpg';
+  imageUrl='https://static.pexels.com/photos/248797/pexels-photo-248797.jpeg';
   title = 'imageEditorCropperJS';
   @ViewChild('angularCropper') public angularCropper: CropperComponent;
 
