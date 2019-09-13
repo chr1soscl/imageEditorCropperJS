@@ -2,13 +2,13 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-app.use(express.static(__dirname+'/dist/imageeditorcropperjs'));
+app.use(express.static(__dirname+'/dist/imageEditorCropperJS'));
 
 app.listen(process.env.PORT || 8080);
 
 //Path location strategy
 app.get('/*',function(req,res){
-    res.sendFile(path.join(__dirname + '/dist/imageeditorcropperjs/index.html'));
+    res.sendFile(path.join(__dirname + '/dist/imageEditorCropperJS/index.html'));
 });
 
 console.log('Application listening.');
